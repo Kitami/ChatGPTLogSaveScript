@@ -1,0 +1,1 @@
+const h = document.documentElement.outerHTML;const b = new Blob([h], { type: "text/html" });const u = URL.createObjectURL(b);const title = document.title;const a = document.createElement("a");a.setAttribute("href", u);a.setAttribute("download", `${title}.html`);a.click();
